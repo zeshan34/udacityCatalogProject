@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+
+    <section id="about" class="content-section text-center">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 mx-auto">
+
+            <h2>Catalog App</h2>
+
+            <p>This is a part of the Udacity fullstack Nano degree program 
+
+             This App is built on flask python frameWork .</p>
+
+            <p class='center-block'>
+
+              <img src="{{url_for('static',filename="store.jpg")}}"  class="throw-center img-responsive">
+
+              <a href="{{url_for('showHome',categories=categories, items=items)}}">click here</a>.</p>
+
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+<footer>
+
+      <div class="container text-center">
+
+        <p>Copyright &copy; catalog app 2018</p>
+
+      </div>
+
+    </footer
+    
+
+{% endblock %}

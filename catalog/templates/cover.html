@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <div class="row text-center welcome-msg">
+        <h1>Catalog App</h1>
+    </div>
+    <div class="row" width=600 height =400>
+        <img src={{url_for('static', filename="store.jpg")}} class="img-responsive">
+    </div>
+    <hr>
+    <div class="row text-center">
+        <div class="col-md-4 col-md-offset-4">
+            <p class="lead">Enter the Electronic store</p>
+            <a href="/catalog">
+                <button class="btn btn-default" role="button">
+                    click in
+                </button>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
